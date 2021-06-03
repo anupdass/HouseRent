@@ -1,0 +1,40 @@
+@media (max-width: 991px) {
+  .header {
+    position: relative;
+  }
+  .custom-nav {
+ position: static;
+  }
+  .custom-nav-toggler {
+    padding: 5px;
+  }
+  .custom-nav-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .custom-nav-icon {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: #000000;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  
+  }
+  .costom-mobile-nav {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 101%;
+    right: 0;
+    background-color: #fff;
+  }
+
+  .costom-mobile-nav .custom-navbar .nav-item:not(:last-child) {
+    border-bottom: 1px solid rgba(0 , 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 768px) {
+
+}

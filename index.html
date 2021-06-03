@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Rent</title>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets//vendor/bootstrap/bootstrap.min.css">
+  <!-- Animate CSS -->
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="./assets/vendor/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/vendor/owlcarousel/owl.theme.default.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+
+<body>
+  <!-- HEADER SECTION START -->
+  <header class="header">
+    <div class="container">
+      <nav class="custom-nav navbar navbar-expand-lg">
+
+        <div class="logo">
+          <a class="navbar-brand" href="./index.html">Asif Ahmed</a>
+        </div>
+        <div class="main-nav">
+          <button class="custom-nav-toggler navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="custom-nav-icon"></span>
+            <span class="custom-nav-icon"></span>
+            <span class="custom-nav-icon"></span>
+          </button>
+          <div class="costom-mobile-nav collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="custom-navbar navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#properties">Property</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sign-nav">
+          <button class="sign-in"> <i class="fas fa-user"></i><span>Sign In</span>
+            <div class="sign-in-box">
+              <h4>Sign In</h4>
+              <form action="" class="sign-in-form">
+                <input class="sign-in-input" type="text" name="" id="" placeholder="Email">
+                <input class="sign-in-input" type="password" name="" id="" placeholder="Password">
+                <input class="sign-in-button" type="button" value="Sign In">
+              </form>
+            </div>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- HEADER SECTION END -->
+
+  <!-- HERO SECTION START -->
+  <section class="hero">
+    <div class="owl-carousel hero-carousel">
+      <div class="hero-item">
+        <img class="hero-img" src="./assets/img/hero/hero1.jpg" alt="">
+      </div>
+      <div class="hero-item">
+        <img class="hero-img" src="./assets/img/hero/hero2.jpg" alt="">
+      </div>
+      <div class="hero-item">
+        <img class="hero-img" src="./assets/img/hero/hero3.jpg" alt="">
+      </div>
+      <div class="hero-item">
+        <img class="hero-img" src="./assets/img/hero/hero4.jpg" alt="">
+      </div>
+    </div>
+    <div class="hero-overlay hero-absolute"></div>
+    <div class="hero-content hero-absolute d-flex align-items-center">
+      <div class="container">
+        <div class="hero-searchbar">
+          <h1 class="hero-heading">Find Your Dream Home</h1>
+          <div class="hero-search">
+            <form class="hero-form row" action="">
+              <div class="col-lg-3 my-2 my-lg-0">
+                <select class="hero-form-select" name="">
+                  <option value="">Property Type</option>
+                  <option value="residential">Residential</option>
+                  <option value="Commercial">Commercial</option>
+                  <option value="Agriculture">Agriculture</option>
+                </select>
+              </div>
+              <div class="col-lg-6 my-2 my-lg-0">
+                <input class="hero-form-input" placeholder="Enter Location" type="text">
+              </div>
+              <div class="col-lg-3 my-2 my-lg-0">
+                <input class="hero-form-button" type="button" value="Search">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HERO SECTION END -->
+
+  <!-- PROPERTIES SECTION START -->
+  <section id="properties" class="section-padding">
+    <header class="section-heading">
+      <h1 class="section-heading-text">Properties</h1>
+    </header>
+    <div class="container">
+      <div class="properties">
+        <div class="properties-nav d-flex justify-content-center">
+          <button class="properties-filter-btn" data-filter="*">All</button>
+          <button class="properties-filter-btn" data-filter=".sell">For Sell</button>
+          <button class="properties-filter-btn" data-filter=".rent">For Rent</button>
+        </div>
+        <div class="property-list">
+          <div class="grid row">
+            <div class="grid-item col-lg-4 sell" data-category="sell">
+              <section class="property-item">
+                <div class="property-box">
+                  <div class="property-media">
+                    <img src="./assets/img/property/properties1.jpg" alt="" class="property-img">
+                    <div class="property-cost d-flex justify-content-between">
+                      <p class="property-size">1300 Sq ft</p>
+                      <p class="property-price">250$</p>
+                    </div>
+                  </div>
+
+                  <div class="property-content">
+                    <h3 class="property-heading">Elite House</h3>
+                    <p class="property-txt">
+                      Location - Banani 11, Holding 32, Block G, Road no 2, house no 9, Dhaka-1216, Bangladesh
+                      1300 Square feet
+                      Three bedroom, Two bath, One dining room and a kitchen.
+                      250$ for one month</p>
+                    <a href="./blog4.html" class="property-btn">View Details</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+
+            <div class="grid-item col-lg-4 rent" data-category="rent">
+              <section class="property-item">
+                <div class="property-box">
+                  <div class="property-media">
+                    <img src="./assets/img/property/properties2.jpg" alt="" class="property-img">
+                    <div class="property-cost d-flex justify-content-between">
+                      <p class="property-size">1100 Sq ft</p>
+                      <p class="property-price">200$</p>
+                    </div>
+                  </div>
+
+                  <div class="property-content">
+                    <h3 class="property-heading">Blue Star</h3>
+                    <p class="property-txt">
+                      Location - Mohammadpur, House 16/A, Ring Road, house no 44, Dhaka -1207, Bangladesh
+                      1100 Square feet
+                      Two bedroom, Two bath, kitchen
+                      200$ for one month
+                    </p>
+                    <a href="./blog4.html" class="property-btn">View Details</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="grid-item col-lg-4 rent" data-category="rent">
+              <section class="property-item">
+                <div class="property-box">
+                  <div class="property-media">
+                    <img src="./assets/img/property/properties3.jpg" alt="" class="property-img">
+                    <div class="property-cost d-flex justify-content-between">
+                      <p class="property-size">1600 Sq ft</p>
+                      <p class="property-price">350$</p>
+                    </div>
+                  </div>
+
+                  <div class="property-content">
+                    <h3 class="property-heading">OBL Homes</h3>
+                    <p class="property-txt">
+                      Location - Gulshan, Plot SE, Road 138, house no 2, Dhaka- 1212, Bangladesh
+                      1600 square feet
+                      Four bedroom, Three bath, One dining room, one kitchen
+                      350$ for one month
+                    </p>
+                    <a href="./blog4.html" class="property-btn">View Details</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="grid-item col-lg-4 rent sell" data-category="rent">
+              <section class="property-item">
+                <div class="property-box">
+                  <div class="property-media">
+                    <img src="./assets/img/property/properties4.jpg" alt="" class="property-img">
+                    <div class="property-cost d-flex justify-content-between">
+                      <p class="property-size">2000 Sq ft</p>
+                      <p class="property-price">500$</p>
+                    </div>
+                  </div>
+
+                  <div class="property-content">
+                    <h3 class="property-heading">Dhaka Cozy</h3>
+                    <p class="property-txt">
+                      Location - Dhanmondi 32, Road no 2, Block E, house no 11, Dhaka-1205, Bangladesh
+                      2000 square feet
+                      Three bedroom, One Master bedroom, Living room, dining room, three bath
+                      500$ for one month</p>
+                    <a href="./blog4.html" class="property-btn">View Details</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="grid-item col-lg-4 rent sell" data-category="rent">
+              <section class="property-item">
+                <div class="property-box">
+                  <div class="property-media">
+                    <img src="./assets/img/property/properties5.jpg" alt="" class="property-img">
+                    <div class="property-cost d-flex justify-content-between">
+                      <p class="property-size">1800 Sq ft</p>
+                      <p class="property-price">400$</p>
+                    </div>
+                  </div>
+
+                  <div class="property-content">
+                    <h3 class="property-heading">Space Apartment</h3>
+                    <p class="property-txt">
+                      Location - Bashundhara Residential Area, Road KA-11, house no 77, Dhaka-1229, Bangladesh
+                      1800 square feet
+                      Two bed room, one master bed room, three bath, One Living room
+                      400$ for one month</p>
+                    <a href="./blog4.html" class="property-btn">View Details</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="grid-item col-lg-4 rent" data-category="rent">
+              <section class="property-item">
+                <div class="property-box">
+                  <div class="property-media">
+                    <img src="./assets/img/property/properties6.jpg" alt="" class="property-img">
+                    <div class="property-cost d-flex justify-content-between">
+                      <p class="property-size">1100 Sq ft</p>
+                      <p class="property-price">250$</p>
+                    </div>
+                  </div>
+
+                  <div class="property-content">
+                    <h3 class="property-heading">Light House</h3>
+                    <p class="property-txt">
+                      Location - Uttara, Sector C, Block E, Road no 5, House no 1, Dhaka-1230, Bangladesh
+                      1100 square feet.
+                      Two bedroom, two bath, dining doom, kitchen
+                      250$ for one month </p>
+                    <a href="./blog4.html" class="property-btn">View Details</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PROPERTIES SECTION END -->
+
+  <!-- TRENDING PROPERTIES SECTION START -->
+  <section class="trending section-padding">
+    <header class="section-heading">
+      <h1 class="section-heading-text">Trending</h1>
+    </header>
+    <div class="container">
+      <div class="owl-carousel trending-carousel">
+        <div class="trending-property-item">
+          <div class="trending-property-media">
+            <img src="./assets/img/trending-house/house1.jpg" alt="" class="trending-property-img">
+          </div>
+          <div class="trending-property-overlay"></div>
+          <div class="trending-property-content d-flex align-items-center">
+            <div class="row w-100">
+              <div class="col-lg-6 offset-lg-6">
+                <div class="trending-property-info">
+                  <h2 class="trending-property-heading">Dhaka Cozy</h2>
+                  <p class="trending-property-address">
+                    Location - Dhanmondi 32, Road no 2, Block E, house no 11, Dhaka-1205, Bangladesh
+                    2000 square feet
+                    Three bedroom, One Master bedroom, Living room, dining room, three bath
+                    500$ for one month</p>
+                  <div class="trending-property-cost">
+                    <p class="trending-property-size"></p>
+                    <p class="trending-property-price"></p>
+                  </div>
+                  <a href="./blog4.html" class="property-btn">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trending-property-item">
+          <div class="trending-property-media">
+            <img src="./assets/img/trending-house/house2.jpg" alt="" class="trending-property-img">
+          </div>
+          <div class="trending-property-overlay"></div>
+          <div class="trending-property-content d-flex align-items-center">
+            <div class="row w-100">
+              <div class="col-md-6 offset-md-6">
+                <div class="trending-property-info">
+                  <h2 class="trending-property-heading">Light House</h2>
+                  <p class="trending-property-address">
+                    Location - Uttara, Sector C, Block E, Road no 5, House no 1, Dhaka-1230, Bangladesh
+                    1100 square feet.
+                    Two bedroom, two bath, dining doom, kitchen
+                    250$ for one month</p>
+                  <div class="trending-property-cost">
+                    <p class="trending-property-size"></p>
+                    <p class="trending-property-price"></p>
+                  </div>
+                  <a href="#" class="property-btn">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trending-property-item">
+          <div class="trending-property-media">
+            <img src="./assets/img/trending-house/house3.jpg" alt="" class="trending-property-img">
+          </div>
+          <div class="trending-property-overlay"></div>
+          <div class="trending-property-content d-flex align-items-center">
+            <div class="row w-100">
+              <div class="col-md-6 offset-md-6">
+                <div class="trending-property-info">
+                  <h2 class="trending-property-heading">Space Apartment </h2>
+                  <p class="trending-property-address">
+                    Location - Bashundhara Residential Area, Road KA-11, house no 77, Dhaka-1229, Bangladesh
+                    1800 square feet
+                    Two bed room, one master bed room, three bath, One Living room
+                    400$ for one month
+                  </p>
+                  <div class="trending-property-cost">
+                    <p class="trending-property-size"></p>
+                    <p class="trending-property-price"></p>
+                  </div>
+                  <a href="#" class="property-btn">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- TRENDING PROPERTIES SECTION END -->
+
+  <!-- TESTIMONIAL SECTION START -->
+  <section id="testimonial" class="testimonial section-padding">
+    <header class="section-heading">
+      <h1 class="section-heading-text">Testimonial</h1>
+    </header>
+    <div class="container">
+      <div class="testimonial-list owl-carousel testimonial-carousel">
+        <!-- <div class="testimonial-item">
+          <div class="testimonial-media">
+            <img src="./assets/img/testimonial/testimonial1.png" alt="" class="testimonial-img">
+          </div>
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              “My family and I had such a unique situation because we were moving from out of state and needed something
+              very quickly. My experience with Homeonwers Property Management has been amazing. Their friendliness,
+              willingness to help us .”</p>
+            <h3 class="testimonial-client">LaShandra E.</h3>
+            <p class="testimonial-client-designation">CEO</p>
+          </div>
+        </div> -->
+
+        <div class="testimonial-item">
+          <div class="testimonial-media">
+            <img src="./assets/img/testimonial/testinomial2.jpg" alt="" class="testimonial-img">
+          </div>
+          <div class="testimonial-content">
+            <p class="testimonial-text">They provide service according to the needs of the buyers. We are very happy and satisfied.
+              Rating - Five Star
+            </p>
+            <div class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <h3 class="testimonial-client">Md. Rayan</h3>
+            <p class="testimonial-client-designation">CEO</p>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-media">
+            <img src="./assets/img/testimonial/testinomial3.jpg" alt="" class="testimonial-img">
+          </div>
+          <div class="testimonial-content">
+            <p class="testimonial-text">I rented a house from them a few months ago.They always see customer
+              satisfaction first. They try to give best service to the customers and visitors.
+              Rating - Five star
+              ”</p>
+            <div class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <h3 class="testimonial-client">Wahida Parvin </h3>
+            <p class="testimonial-client-designation">CEO</p>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-media">
+            <img src="https://thumbs.dreamstime.com/b/young-asian-business-woman-isolated-smiling-122154472.jpg" alt=""
+              class="testimonial-img">
+          </div>
+          <div class="testimonial-content">
+            <p class="testimonial-text">They are always working on something new and comfortable things. They try to give good things at low prices. 
+              Rating - Five star
+              </p>
+              <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            <h3 class="testimonial-client">Refayat Alam</h3>
+            <p class="testimonial-client-designation">CEO</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- TESTIMONIAL SECTION END -->
+
+  <!-- BLOG SECTION START -->
+  <section id="blog" class="blog section-padding">
+    <header class="section-heading">
+      <h1 class="section-heading-text">Blog</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="blog-item">
+            <div class="blog-media">
+              <img class="blog-img" src="./assets/img/blog/blog1.jpg" alt="">
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-heading text-primary"> Light House</h3>
+              <p class="blog-text">
+                Location - Uttara, Sector C, Block E, Road no 5, House no 1, Dhaka-1230, Bangladesh
+                1100 square feet.
+                Two bedroom, two bath, dining doom, kitchen
+                250$ for one month</p>
+              <a href="./blog4.html" class="blog-btn">Read More<i class="fas fa-angle-double-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="blog-item">
+            <div class="blog-media">
+              <img class="blog-img" src="./assets/img/blog/blog2.jpg" alt="">
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-heading text-primary">Blue Star</h3>
+              <p class="blog-text">
+                Location - Mohammadpur, House 16/A, Ring Road, house no 44, Dhaka -1207, Bangladesh
+                1100 Square feet
+                Two bedroom, Two bath, kitchen
+                200$ for one month</p>
+              <a href="./blog4.html" class="blog-btn">Read More<i class="fas fa-angle-double-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="blog-item">
+            <div class="blog-media">
+              <img class="blog-img" src="./assets/img/blog/blog3.jpg" alt="">
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-heading text-primary">OBL Homes</h3>
+              <p class="blog-text">
+                Location - Gulshan, Plot SE, Road 138, house no 2, Dhaka- 1212, Bangladesh
+                1600 square feet
+                Four bedroom, Three bath, One dining room, one kitchen
+                350$ for one month</p>
+              <a href="./blog4.html" class="blog-btn">Read More<i class="fas fa-angle-double-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="info-ask">
+              <h1 class="info-heading">About <br>Rental Management System</h1>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="info-content">
+              <p class="info-text">The Rental Management System is based on the Owners and the Customers .The Owner is
+                updated the house details. The Customer is details about the Room space, House rent and the Address
+                Details also.... </p>
+              <a href="./blog4.html" class="blog-btn">Read More<i class="fas fa-angle-double-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- BLOG SECTION END -->
+
+  <!-- CONTACT SECTION START -->
+  <section id="contact" class="contact section-padding">
+    <header class="section-heading">
+      <h1 class="section-heading-text">Contact us</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="contact-us">
+            <form action="" class="contact-form">
+              <div class="input-group">
+                <input class="input-item" placeholder="Your Name" type="text">
+              </div>
+              <div class="input-group">
+                <input class="input-item" placeholder="Your Email" type="email">
+              </div>
+              <div class="input-group">
+                <textarea class="input-item" placeholder="Your Message" name="" id="" cols="30" rows="10"></textarea>
+              </div>
+              <div class="input-group-btn">
+                <input class="input-btn" type="button" value="Submit">
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT SECTION END -->
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="about-company my-3 my-md-0">
+            <h2 class="company-logo">Asif Ahmed</h2>
+            <p class="company-info">My name is Asif Ahmed. I live in Bangladesh. I study at Jiangnan University. My
+              major is Computer science and technology.
+              <br><br>
+              I strongly believe success consistency. I will remain focused on my goals. Even if i have a moment of
+              difficulty, i will not give up. Things will get better, no problem and challenge will stop me.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="quick-link my-3 my-md-0">
+            <h2 class="footer-heading">Quick Link</h2>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-footer my-3 my-md-0">
+            <h2 class="footer-heading">Contact US</h2>
+            <P class="contact-text">Email - Prantwoxy@gmail.com
+              Mobile number - +8801711306284</P>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="social">
+            <h2 class="footer-heading">Follow Us</h2>
+            <div class="social-list">
+              <a class="social-icon" target="_blank" href="https://www.facebook.com/PrantwAhmed"><span><i
+                    class="fab fa-facebook-f"></i></span></a>
+              <a class="social-icon" href=""><i class="fab fa-twitter"></i></a>
+              <a class="social-icon" href=""><i class="fab fa-google"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="./assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- Jquery JS -->
+  <script src="./assets/vendor/jquery/jquery.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="./assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+  <!-- Isotope JS -->
+  <script src="./assets/vendor/Isotope/isotope.pkgd.min.js"></script>
+  <!-- Custom JS -->
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
